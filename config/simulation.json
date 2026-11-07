@@ -1,0 +1,67 @@
+{
+  "panel_specs": {
+    "BACK": {
+      "resistance_ohm": 12.0,
+      "heat_capacity_j_per_c": 90.0,
+      "ambient_conductance_w_per_c": 0.14,
+      "body_conductance_w_per_c": 0.16,
+      "rated_power_w": null
+    },
+    "CHEST_L": {
+      "resistance_ohm": 24.0,
+      "heat_capacity_j_per_c": 70.0,
+      "ambient_conductance_w_per_c": 0.1,
+      "body_conductance_w_per_c": 0.1,
+      "rated_power_w": null
+    },
+    "CHEST_R": {
+      "resistance_ohm": 24.0,
+      "heat_capacity_j_per_c": 70.0,
+      "ambient_conductance_w_per_c": 0.1,
+      "body_conductance_w_per_c": 0.1,
+      "rated_power_w": null
+    },
+    "GLOVE_L": {
+      "resistance_ohm": 48.0,
+      "heat_capacity_j_per_c": 25.0,
+      "ambient_conductance_w_per_c": 0.06,
+      "body_conductance_w_per_c": 0.03,
+      "rated_power_w": null
+    },
+    "GLOVE_R": {
+      "resistance_ohm": 48.0,
+      "heat_capacity_j_per_c": 25.0,
+      "ambient_conductance_w_per_c": 0.06,
+      "body_conductance_w_per_c": 0.03,
+      "rated_power_w": null
+    }
+  },
+  "source_cont_current_a": 3.0,
+  "source_cont_power_w": 36.0,
+  "source_peak_current_a": 3.2,
+  "bus_peak_current_a": 3.5,
+  "heater_max_avg_power_w": 24.0,
+  "idle_input_power_w": 1.0,
+  "power_efficiency": 0.9,
+  "source_min_voltage_v": 9.0,
+  "source_max_voltage_v": 13.0,
+  "bus_min_voltage_v": 9.0,
+  "bus_max_voltage_v": 13.0,
+  "temp_cutoff_c": 48.0,
+  "temp_release_c": 42.0,
+  "sensor_min_c": -40.0,
+  "sensor_max_c": 100.0,
+  "sensor_max_age_s": 1.5,
+  "control_period_s": 0.5,
+  "max_control_gap_s": 2.0,
+  "connection_stable_s": 2.0,
+  "switch_trip_c": 55.0,
+  "switch_release_c": 48.0,
+  "target_temp_c": 38.0,
+  "kp": 0.12,
+  "ki": 0.004,
+  "ambient_temp_c": 5.0,
+  "body_temp_c": 32.0,
+  "initial_temp_c": 28.0,
+  "assumption_note": "SIMULATION ONLY: all electrical and thermal values are unverified assumptions."
+}

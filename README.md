@@ -1,5 +1,9 @@
 # THERMAL LINK — Rev.C 파이썬 가상 실험실
 
+[![시뮬레이터 실행](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://thermallink-jacket-simulator.streamlit.app/)
+
+**[▶ 시뮬레이터 실행 — 설치 없이 웹에서 체험](https://thermallink-jacket-simulator.streamlit.app/)** · [1분 데모 영상](outputs/THERMAL_LINK_10x_60s.mp4)
+
 **Rev.C FIRMWARE-AI 인터페이스**를 기준으로 작성한 실행 가능한 제어 코드와 시뮬레이터입니다. 5개 발열패드, NTC 5개, 공통 PWM 1채널을 사용합니다.
 
 실물 정격과 열 특성이 제공되지 않아 모든 기본 파라미터를 **검증되지 않은 시뮬레이션 가정값**으로 분리했습니다. 실물 ESP32 제어 코드는 포함하지 않습니다. PI 제어와 가상 데이터로 PI를 모방 학습한 소형 신경망을 선택할 수 있습니다.
@@ -22,9 +26,9 @@
 .\.venv\Scripts\python.exe simulate.py --controller neural --ambient-profile triangle --duration 600 --output outputs/neural_demo
 ```
 
-## GitHub에서 실행하기
+## GitHub Codespaces에서 개발하기
 
-저장소에 올리는 것만으로 실행 화면이 호스팅되지는 않습니다. PC에 설치하지 않고 실행하려면 **Code → Codespaces → Create codespace on main**을 선택합니다. Python 3.12와 화면 패키지가 준비되면 터미널에서 실행합니다.
+체험은 상단 **시뮬레이터 실행** 링크를 이용합니다. 코드를 수정하며 실행하려면 **Code → Codespaces → Create codespace on main**을 선택합니다. Python 3.12와 화면 패키지가 준비되면 터미널에서 실행합니다.
 
 ```bash
 python -m streamlit run app.py --server.address 0.0.0.0 --server.port 8501
@@ -66,7 +70,7 @@ Python 3.11 이상이 설치된 Windows PC에서 실행합니다. 실행에 필�
 
 ```powershell
 # 화면 실행
-.\.venv\Scripts\python.exe -m streamlit run app.py
+.\.venv\Scripts\python.exe -m streamlit run app.py --server.address 127.0.0.1
 
 # 전체 11개 시나리오, 각 600초
 .\.venv\Scripts\python.exe simulate.py --all --duration 600 --config config/simulation.json

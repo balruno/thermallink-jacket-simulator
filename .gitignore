@@ -1,0 +1,26 @@
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Local credentials, app state and generated bundles.
+.env
+.env.*
+.streamlit/secrets.toml
+.codex/
+.agents/
+.aws/
+*.log
+*.pid
+*.zip
+
+# Keep the reproducible demo video; omit local runs and session captures.
+outputs/*
+!outputs/THERMAL_LINK_10x_60s.mp4
+!outputs/THERMAL_LINK_10x_60s.png
+
+# Original pasted attachment stays local; the implementation contract is shared.
+docs/source_checklist.txt

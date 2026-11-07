@@ -1,0 +1,12 @@
+{
+  "name": "THERMAL LINK Python 3.12",
+  "image": "mcr.microsoft.com/devcontainers/python:3.12-bookworm",
+  "postCreateCommand": "python -m pip install -r requirements.txt",
+  "forwardPorts": [8501],
+  "portsAttributes": {
+    "8501": {
+      "label": "THERMAL LINK 시뮬레이터",
+      "onAutoForward": "notify"
+    }
+  }
+}
